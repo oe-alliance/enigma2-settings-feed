@@ -2,7 +2,7 @@
 
 # Script by jbleyel for https://github.com/oe-alliance
 
-PVER="1.0"
+PVER="1.1"
 PR="r0"
 PACK="ciefp"
 LOCAL="local"
@@ -72,13 +72,19 @@ mkdir -p ${R}
 rm -rf ${D}/feed/${PACKNAME}*.ipk
 
 MakeIPK ciefp-E2-1sat-19E 19e ${VER}
-MakeIPK ciefp-E2-2sat-19E-16E 19e.16e ${VER}
-MakeIPK ciefp-E2-3sat-19E-16E-13E 19e.16e.13e ${VER}
-MakeIPK ciefp-E2-4sat-19E-16E-13E-0.8W 19e.16e.13e.0.8w ${VER}
+MakeIPK ciefp-E2-2satA-19E-13E 19e.13e ${VER}
+MakeIPK ciefp-E2-2satB-19E-16E 19e.16e ${VER}
+MakeIPK ciefp-E2-3satA-9E-10E-13E 9e.10e.13e ${VER}
+MakeIPK ciefp-E2-3satB-19E-16E-13E 19e.16e.13e ${VER}
+MakeIPK ciefp-E2-4satA-28E-19E-13E-30W 28e.19e.13e.30w ${VER}
+MakeIPK ciefp-E2-4satB-19E-16E-13E-0.8W 19e.16e.13e.0.8w ${VER}
 MakeIPK ciefp-E2-5sat-19E-16E-13E-1.9E-0.8W 19e.16e.13e.1.9e.0.8w ${VER}
 MakeIPK ciefp-E2-6sat-23E-19E-16E-13E-1.9E-0.8W 23e.19e.16e.13e.1.9e.0.8w ${VER}
 MakeIPK ciefp-E2-7sat-23E-19E-16E-13E-4.8E-1.9E-0.8W 23e.19e.16e.13e.1.9e.0.8w ${VER}
 MakeIPK ciefp-E2-8sat-28E-23E-19E-16E-13E-4.8E-1.9E-0.8W 28e.23e.19e.16e.13e.4.8e.1.9e.0.8w ${VER}
 MakeIPK ciefp-E2-9sat-39E-28E-23E-19E-16E-13E-4.8E-1.9E-0.8W 39e.23e.19e.16e.13e.4.8e.1.9e.0.8w ${VER}
-MakeIPK ciefp-E2-motor-68E-30W-VOD motor.68e.30w.vod ${VER}
-
+MakeIPK ciefp-E2-10sat-39E-28E-23E-19E-16E-13E-9E-4.8E-1.9E-0.8W 39e.28e.23e.19e.16e.13e.9e.4.8e.1.9e.0.8w ${VER}
+MakeIPK ciefp-E2-13sat-42E-39E-28E-23E-19E-16E-13E-9E-7E-4.8E-1.9E-0.8w-5w 42e.39e.28e.23e.19e.16e.13e.9e.7e.4.8e.1.9e.0.8w.5w ${VER}
+MakeIPK ciefp-E2-16sat-42E-39E-28E-26E-23E-19E-16E-13E-10E-9E-7E-4.8E-1.9E-0.8w-4W-5w 42e.39e.28e.26e.23e.19e.16e.13e.10e.9e.7e.4.8e.1.9e.0.8w.4w.5w ${VER}
+MakeIPK ciefp-E2-18sat-42E-39E-36E-33E-28E-26E-23E-19E-16E-13E-10E-9E-7E-4.8E-1.9E-0.8w-4W-5w 42e.39e.36e.33e.28e.26e.23e.19e.16e.13e.10e.9e.7e.4.8e.1.9e.0.8w.4w.5w ${VER}
+MakeIPK ciefp-E2-motor-75E-34W motor.75e.34w ${VER}
